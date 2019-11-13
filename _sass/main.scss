@@ -26,7 +26,8 @@ $purple: #6A379A;
 $primary-color: $blue;
 
 
-// Update the sans-serif font family
+// Typography
+$body-font-size: 1.125rem;
 $family-sans-serif: "Lato", "Helvetica", "Arial", sans-serif;
 $body-color : #757575;
 
@@ -42,6 +43,16 @@ $fullhd-enabled: false;
 
 @import "../node_modules/bulma/bulma";
 
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6{
+	color: $blue;
+	font-weight: 700;
+}
+
+.content a{
+	font-weight: 700;
+	border-bottom: 1px solid $blue;
+}
 
 #introduction-animation{
 	position: absolute;
@@ -62,13 +73,10 @@ $fullhd-enabled: false;
 	}
 }
 
-#introduction{
+.page-title{
 	.title{
 		color: $blue;
 		font-weight: 700;
-	}
-	.hero-body{
-		padding: 0;
 	}
 	#introduction-highlight{
 		flex-grow: 1;
@@ -78,7 +86,19 @@ $fullhd-enabled: false;
 }
 
 
-.feature{
-	background-size: cover;
-	background-position: center;
+.has-divider{
+	&:before{
+		position: absolute;
+		content: "";
+		width: 4rem;
+		height: .5rem;
+		background-color: $blue;
+		top: 2rem;
+	}
+}
+
+#skills, #values{
+	.skill, .value{
+		margin-bottom: 2rem;
+	}
 }
