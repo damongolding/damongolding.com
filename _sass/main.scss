@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+// Customization
+
+// You can easily customize Bulma with your own variables.
+// Just uncomment the following block to see the result.
+
+
+// 1. Import the initial variables
+@import "../node_modules/bulma/sass/utilities/initial-variables";
+
+// 2. Set your own initial variables
+// Update the blue shade, used for links
+
+$lightGrey : #eeeeee;
+$darkGrey : #141520;
+$blue: #254473;
+$red: #E54B4B;
+
+// secondary colour
+$pink:#E54B4B;
+$green : #379A4D;
+$darkGreen: #21602F;
+$purple: #6A379A;
+
+$primary-color: $blue;
+
+
+// Update the sans-serif font family
+$family-sans-serif: "Lato", "Helvetica", "Arial", sans-serif;
+$body-color : #757575;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $blue;
+
+$widescreen-enabled: true;
+$fullhd-enabled: false;
+
+// 4. Import the rest of Bulma
+
+
+@import "../node_modules/bulma/bulma";
+
+
+#introduction-animation{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 10000;
+	.title{
+		color: #fff;
+	}
+	#introduction-animation-bg{
+		position: absolute;
+		top: 0;
+		left: 0;
+		background-color: $blue;
+		width:100%;
+		height: 100%;
+	}
+}
+
+#introduction{
+	.title{
+		color: $blue;
+		font-weight: 700;
+	}
+	.hero-body{
+		padding: 0;
+	}
+	#introduction-highlight{
+		flex-grow: 1;
+		border-left:12px solid $blue;
+		padding: 0rem 1.5rem;
+	}
+}
+
+
+.feature{
+	background-size: cover;
+	background-position: center;
+}
