@@ -5,31 +5,29 @@
 // You can easily customize Bulma with your own variables.
 // Just uncomment the following block to see the result.
 
-
 // 1. Import the initial variables
 @import "../node_modules/bulma/sass/utilities/initial-variables";
 
 // 2. Set your own initial variables
 // Update the blue shade, used for links
 
-$lightGrey : #eeeeee;
-$darkGrey : #141520;
+$lightGrey: #eeeeee;
+$darkGrey: #141520;
 $blue: #254473;
-$red: #E54B4B;
+$red: #e54b4b;
 
 // secondary colour
-$pink:#E54B4B;
-$green : #379A4D;
-$darkGreen: #21602F;
-$purple: #6A379A;
+$pink: #e54b4b;
+$green: #379a4d;
+$darkGreen: #21602f;
+$purple: #6a379a;
 
 $primary-color: $blue;
-
 
 // Typography
 $body-font-size: 1.125rem;
 $family-sans-serif: "Lato", "Helvetica", "Arial", sans-serif;
-$body-color : #757575;
+$body-color: #757575;
 
 // 3. Set the derived variables
 // Use the new pink as the primary color
@@ -40,65 +38,84 @@ $fullhd-enabled: false;
 
 // 4. Import the rest of Bulma
 
-
 @import "../node_modules/bulma/bulma";
+//@import "../node_modules/bulma-pageloader/dist/css/bulma-pageloader.sass";
 
-
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6{
-	color: $blue;
-	font-weight: 700;
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: $blue;
+  font-weight: 700;
 }
 
-.content a{
-	font-weight: 700;
-	border-bottom: 1px solid $blue;
+.content a {
+  font-weight: 700;
+  border-bottom: 1px solid $blue;
 }
 
-#introduction-animation{
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	z-index: 10000;
-	.title{
-		color: #fff;
-	}
-	#introduction-animation-bg{
-		position: absolute;
-		top: 0;
-		left: 0;
-		background-color: $blue;
-		width:100%;
-		height: 100%;
-	}
+#introduction-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 10000;
+  .title {
+    color: #fff;
+  }
+  #introduction-animation-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $blue;
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.page-title{
-	.title{
-		color: $blue;
-		font-weight: 700;
-	}
-	#introduction-highlight{
-		flex-grow: 1;
-		border-left:12px solid $blue;
-		padding: 0rem 1.5rem;
-	}
+.page-title {
+  .title {
+    color: $blue;
+    font-weight: 700;
+  }
+  #introduction-highlight {
+    flex-grow: 1;
+    border-left: 12px solid $blue;
+    padding: 0rem 1.5rem;
+  }
 }
 
-
-.has-divider{
-	&:before{
-		position: absolute;
-		content: "";
-		width: 4rem;
-		height: .5rem;
-		background-color: $blue;
-		top: 2rem;
-	}
+.has-divider {
+  &:before {
+    position: absolute;
+    content: "";
+    width: 4rem;
+    height: 0.5rem;
+    background-color: $blue;
+    top: 2rem;
+  }
 }
 
-#skills, #values{
-	.skill, .value{
-		margin-bottom: 2rem;
-	}
+#skills,
+#values {
+  .skill,
+  .value {
+    margin-bottom: 2rem;
+  }
+}
+
+#pageloader {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  position: fixed;
+  padding-top: 2em;
+  background: #254473;
+  background: #254473;
+	z-index: 999998;
+	transform: translate(0,-100%);
 }

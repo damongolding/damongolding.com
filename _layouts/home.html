@@ -1,23 +1,6 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Damon Golding : Digital Designer</title>
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <section id="introduction-animation" class="hero is-fullheight">
-      <div id="introduction-animation-bg"></div>
-      <div class="hero-body">
-        <div class="container">
-          <h1 id="introduction-animation-title" class="title is-1">
-            Welcome!
-          </h1>
-        </div>
-      </div>
-    </section>
+{% include head.html %}
+
+<div id="content">
 
     <section id="introduction" class="hero is-fullheight page-title">
       <div class="hero-head">
@@ -25,7 +8,7 @@
           <div class="container">
             <div class="navbar-menu">
               <div class="navbar-start">
-                <a href="/about" class="navbar-item">
+                <a href="about" onclick="loadpage(event); return false;" class="navbar-item">
                   About
                 </a>
                 <a class="navbar-item">
@@ -41,16 +24,13 @@
           <div class="container">
             <div class="columns">
               <div
+                id="introduction"
                 class="column content is-9-tablet is-7-desktop is-6-widescreen"
               >
-                <h1 id="introduction-title" class="title is-1 is-spaced">
+                <h1 class="title is-1 is-spaced">
                   Hey, my name is Damon.
                 </h1>
-                <p id="introduction-body">
-                  A digital designer with a heart that embraces all things
-                  creative, artistic and innovative, I have 3+ years experience
-                  in industry, both agency-side, client-side and freelance.
-                </p>
+                {{ content }}
               </div>
             </div>
           </div>
@@ -87,11 +67,6 @@
       </div>
     </section>
 
+  </div>
 
-    <footer></footer>
-
-    <script>var homepage = true;</script>
-    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
-    <script type="text/javascript" src="lib/main.js"></script>
-  </body>
-</html>
+		{% include footer.html %}

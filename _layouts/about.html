@@ -1,0 +1,131 @@
+{% include head.html %}
+
+<div id="content">
+
+    <section class="hero page-title is-medium">
+      <div class="hero-head">
+        <header class="navbar">
+          <div class="container">
+            <div class="navbar-menu">
+              <div class="navbar-start">
+                <a href="/" onclick="loadpage(event); return false;" class="navbar-item">
+                  Home
+                </a>
+                <a class="navbar-item">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <div class="hero-body">
+        <div id="introduction-highlight">
+          <div class="container">
+            <div class="columns">
+              <div
+                id="introduction"
+                class="column content is-9-tablet is-7-desktop is-6-widescreen"
+              >
+                <h1 class="title is-1 is-spaced">
+                  About me
+                </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div class="column content is-9-tablet is-7-desktop is-6-widescreen">
+            {{ content }}
+          </div>
+        </div>
+      </div>
+		</section>
+
+		<section class="section">
+			<div class="container has-divider">
+				
+			</div>
+		</section>
+		
+    <section class="section">
+      <div class="container">
+        <div class="columns">
+          <div id="skills" class="column is-6 content">
+            <h3 class="title is-2">
+              Skills.
+            </h3>
+
+            <div class="skill">
+              <p class="title is-4">
+                Web and user interface design.
+              </p>
+              <p class="subtitle is-6 is-spaced">
+                Figma, Sketch, Photoshop.
+              </p>
+            </div>
+
+            <div class="skill">
+              <p class="title is-4">
+                Interaction design.
+              </p>
+              <p class="subtitle is-6 is-spaced">
+                Figma, Adobe XD.
+              </p>
+            </div>
+            <div class="skill">
+              <p class="title is-4">
+                Motion graphics.
+              </p>
+              <p class="subtitle is-6 is-spaced">
+                After effects.
+              </p>
+            </div>
+            <div class="skill">
+              <p class="title is-4">
+                Video editing.
+              </p>
+              <p class="subtitle is-6 is-spaced">
+                Premier Pro, After effects.
+              </p>
+            </div>
+          </div>
+
+          <div id="values" class="column is-6 content">
+            <h3 class="title is-2">
+              Values.
+            </h3>
+
+            <div class="value">
+              <p class="title is-4">
+                The web is for EVERYONE.
+              </p>
+              <p class="subtitle is-6 is-spaced">
+                Accessibility should be considered from the begining of the
+                design process.
+              </p>
+            </div>
+
+            <div class="value">
+              <p class="title is-4">
+                Always learning.
+              </p>
+              <p class="subtitle is-6 is-spaced">
+                The web is constantly changing.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
+    
+</div>
+		
+{% include footer.html %}

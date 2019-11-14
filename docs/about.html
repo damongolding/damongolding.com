@@ -4,17 +4,66 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>About Damon Golding</title>
-    <link rel="stylesheet" href="css/main.css" />
+    <title>Damon Golding : Digital Designer</title>
+
+    <meta name="description" content="This is the sites description!" />
+    <meta name="keywords" content="damon, is, fucking, great" />
+    <meta name="robots" content="" />
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="This is the sites description!" />
+    <meta name="twitter:site" content="" />
+    <meta name="twitter:title" content="" />
+    <meta
+      name="twitter:description"
+      content="This is the sites description!"
+    />
+    <meta
+      name="twitter:creator"
+      content=""
+    />
+    <!-- Twitter Summary card images must be at least 120x120px -->
+    <meta name="twitter:image" content="" />
+    <meta name="twitter:url" content="" />
+
+    <!-- Open Graph (facebook) data -->
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="/about.html" />
+    <meta property="og:image" content="" />
+    <meta
+      property="og:description"
+      content="This is the sites description!"
+    />
+    <meta property="og:site_name" content="" />
+
+    <link rel="canonical" href="/about.html" />
+
+
+    <link rel="stylesheet" href="assets/css/main.css" />
   </head>
-  <body>
+<body>
+
+    <section id="introduction-animation" class="hero is-fullheight">
+        <div id="introduction-animation-bg"></div>
+        <div class="hero-body">
+          <div class="container">
+            <h1 id="introduction-animation-title" class="title is-1">
+              Welcome!
+            </h1>
+          </div>
+        </div>
+      </section>
+
+
+<div id="content">
+
     <section class="hero page-title is-medium">
       <div class="hero-head">
         <header class="navbar">
           <div class="container">
             <div class="navbar-menu">
               <div class="navbar-start">
-                <a class="navbar-item">
+                <a href="/" onclick="loadpage(event); return false;" class="navbar-item">
                   Home
                 </a>
                 <a class="navbar-item">
@@ -30,9 +79,10 @@
           <div class="container">
             <div class="columns">
               <div
+                id="introduction"
                 class="column content is-9-tablet is-7-desktop is-6-widescreen"
               >
-                <h1 id="introduction-title" class="title is-1 is-spaced">
+                <h1 class="title is-1 is-spaced">
                   About me
                 </h1>
               </div>
@@ -46,30 +96,27 @@
       <div class="container">
         <div class="columns">
           <div class="column content is-9-tablet is-7-desktop is-6-widescreen">
-            <p>
-              Maecenas faucibus mollis interdum. Vestibulum id ligula porta
-              felis euismod <a href="#">semper</a>. Nulla vitae elit libero, a pharetra augue.
-              Integer posuere erat a ante venenatis dapibus posuere velit
-              aliquet. Maecenas faucibus mollis interdum. Maecenas sed diam eget
-              risus varius blandit sit amet non magna. Nulla vitae elit libero,
-              a pharetra augue.
-            </p>
-            <p>
-              Maecenas faucibus mollis interdum. Vestibulum id ligula porta
-              felis euismod semper. Nulla vitae elit libero, a pharetra augue.
-              Integer posuere erat a ante venenatis dapibus posuere velit
-              aliquet. Maecenas faucibus mollis interdum. Maecenas sed diam eget
-              risus varius blandit sit amet non magna. Nulla vitae elit libero,
-              a pharetra augue.
-            </p>
-            <p>
-              Maecenas faucibus mollis interdum. Vestibulum id ligula porta
-              felis euismod semper. Nulla vitae elit libero, a pharetra augue.
-              Integer posuere erat a ante venenatis dapibus posuere velit
-              aliquet. Maecenas faucibus mollis interdum. Maecenas sed diam eget
-              risus varius blandit sit amet non magna. Nulla vitae elit libero,
-              a pharetra augue.
-            </p>
+            <p>Maecenas faucibus mollis interdum. Vestibulum id ligula porta
+felis euismod <a href="http://google.com">semper</a>. Nulla vitae elit libero, a pharetra augue.
+Integer posuere erat a ante venenatis dapibus posuere velit
+aliquet. Maecenas faucibus mollis interdum. Maecenas sed diam eget
+risus varius blandit sit amet non magna. Nulla vitae elit libero,
+a pharetra augue.</p>
+
+<p>Maecenas faucibus mollis interdum. Vestibulum id ligula porta
+felis euismod semper. Nulla vitae elit libero, a pharetra augue.
+Integer posuere erat a ante venenatis dapibus posuere velit
+aliquet. Maecenas faucibus mollis interdum. Maecenas sed diam eget
+risus varius blandit sit amet non magna. Nulla vitae elit libero,
+a pharetra augue.</p>
+
+<p>Maecenas faucibus mollis interdum. Vestibulum id ligula porta
+felis euismod semper. Nulla vitae elit libero, a pharetra augue.
+Integer posuere erat a ante venenatis dapibus posuere velit
+aliquet. Maecenas faucibus mollis interdum. Maecenas sed diam eget
+risus varius blandit sit amet non magna. Nulla vitae elit libero,
+a pharetra augue.</p>
+
           </div>
         </div>
       </div>
@@ -152,10 +199,18 @@
       </div>
     </section>
 
-		<footer></footer>
+    <footer></footer>
+    
+</div>
 		
-    <script>var homepage = false;</script>
-		<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
-    <script type="text/javascript" src="lib/main.js"></script>
+
+    <footer></footer>
+    
+    <div id="pageloader" class="pageloader"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/pjax@0.2.8/pjax.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
   </body>
 </html>
+
