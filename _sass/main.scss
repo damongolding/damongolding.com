@@ -6,7 +6,7 @@
 // Just uncomment the following block to see the result.
 
 // 1. Import the initial variables
-@import "../node_modules/bulma/sass/utilities/initial-variables";
+@import "bulma/sass/utilities/initial-variables";
 
 // 2. Set your own initial variables
 // Update the blue shade, used for links
@@ -38,8 +38,7 @@ $fullhd-enabled: false;
 
 // 4. Import the rest of Bulma
 
-@import "../node_modules/bulma/bulma";
-//@import "../node_modules/bulma-pageloader/dist/css/bulma-pageloader.sass";
+@import "bulma/bulma";
 
 .content h1,
 .content h2,
