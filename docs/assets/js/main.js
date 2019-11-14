@@ -19,8 +19,8 @@ var pjax = new Pjax({
 
 document.addEventListener('pjax:complete', ()=>{
 
-  gsap.to('#pageloader', {duration:0.5, x:"-100%", onComplete:()=>{
-    gsap.set('#pageloader', {x:"100%"});
+  gsap.to('#pageloader', {duration:0.5, x:"100%", onComplete:()=>{
+    gsap.set('#pageloader', {x:"-100%"});
   }});
   gsap.from('#content',{duration:0.5, x:"-100"});
   
@@ -28,6 +28,7 @@ document.addEventListener('pjax:complete', ()=>{
 
 
 function loadpage(e){
+  gsap.to('#content', {duration:1, x:"100"});
   gsap.to('#pageloader', {duration:0.5, x:"0%", onComplete:()=>{
     pjax.loadUrl(e.target.href);
   }});

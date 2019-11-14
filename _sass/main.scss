@@ -112,9 +112,7 @@ $fullhd-enabled: false;
   right: 0;
   top: 0;
   position: fixed;
-  padding-top: 2em;
-  background: #254473;
   background: #254473;
 	z-index: 999998;
-	transform: translate(100%,0);
+	transform: translate(-100%,0);
 }
