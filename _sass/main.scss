@@ -36,6 +36,10 @@ $primary: $blue;
 $widescreen-enabled: true;
 $fullhd-enabled: false;
 
+
+// Form
+
+
 // 4. Import the rest of Bulma
 
 @import "bulma/bulma";
@@ -116,4 +120,8 @@ $fullhd-enabled: false;
   background: #254473;
 	z-index: 999998;
 	transform: translate(-100%,0);
+}
+
+.field:not(:last-child){
+	margin-bottom: $size-3;
 }

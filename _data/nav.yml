@@ -1,0 +1,13 @@
+pages:
+
+- title: Home
+  url: /damongolding.com/
+  slug: /
+
+- title: About
+  url: about
+  slug: /about.html
+
+- title: Contact
+  url: contact
+  slug: /contact.html

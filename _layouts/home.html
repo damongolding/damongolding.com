@@ -1,72 +1,69 @@
-{% include head.html %}
-
+{% include header.html %}
+{{ page.url }}
 <div id="content">
-
-    <section id="introduction" class="hero is-fullheight page-title">
-      <div class="hero-head">
-        <header class="navbar">
-          <div class="container">
-            <div class="navbar-menu is-active is-shadowless">
-              <div class="navbar-start">
-                <a href="{{ 'about' | relative_url }}" onclick="loadpage(event); return false;" class="navbar-item">
-                  About
-                </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
-              </div>
-            </div>
-          </div>
-        </header>
-      </div>
-      <div class="hero-body">
-        <div id="introduction-highlight">
-          <div class="container">
-            <div class="columns">
-              <div
-                id="introduction"
-                class="column content is-9-tablet is-7-desktop is-6-widescreen"
+  <section class="hero is-fullheight page-title">
+    <div class="hero-head">
+      <header class="navbar">
+        <div class="container">
+          <div class="navbar-menu is-active is-shadowless">
+            <div class="navbar-start">
+              {% for item in site.data.nav.pages %}
+              <a
+                href="{{ item.url }}"
+                onclick="loadpage(event); return false;"
+                class="navbar-item{% if item.slug == page.url %} is-active{% endif %}"
               >
-                <h1 class="title is-1 is-spaced">
-                  Hey, my name is Damon.
-                </h1>
-                {{ content }}
-              </div>
+                {{ item.title }}
+              </a>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+    <div class="hero-body">
+      <div id="introduction-highlight">
+        <div class="container">
+          <div class="columns">
+            <div
+              id="introduction"
+              class="column content is-9-tablet is-7-desktop is-6-widescreen"
+            >
+              <h1 class="title is-1 is-spaced">
+                Hey, my name is Damon.
+              </h1>
+              {{ content }}
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section class="section">
-      <div class="container">
-        <div class="tile is-ancestor">
-          <div class="tile">
-            <div class="tile is-6 is-vertical is-parent">
-              <div class="tile is-child">
-                <img
-                  class="is-block"
-                  src="assets/img/nevents.png"
-                  srcset="assets/img/nevents@2x.png 2x"
-                  alt=""
-                />
-              </div>
-              <div class="tile is-child">
-                <img
-                  class="is-block"
-                  src="http://placehold.it/564x359"
-                  alt=""
-                />
-              </div>
+  <section class="section">
+    <div class="container">
+      <div class="tile is-ancestor">
+        <div class="tile">
+          <div class="tile is-6 is-vertical is-parent">
+            <div class="tile is-child">
+              <img
+                class="is-block"
+                src="assets/img/nevents.png"
+                srcset="assets/img/nevents@2x.png 2x"
+                alt=""
+              />
             </div>
-            <div class="tile is-parent">
-              <img class="is-block" src="http://placehold.it/588x778" alt="" />
+            <div class="tile is-child">
+              <img class="is-block" src="http://placehold.it/564x359" alt="" />
             </div>
+          </div>
+          <div class="tile is-parent">
+            <img class="is-block" src="http://placehold.it/588x778" alt="" />
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
+</div>
 
-  </div>
-
-		{% include footer.html %}
+{% include footer.html %}

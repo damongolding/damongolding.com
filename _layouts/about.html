@@ -1,4 +1,4 @@
-{% include head.html %}
+{% include header.html %}
 
 <div id="content">
 
@@ -8,12 +8,15 @@
           <div class="container">
             <div class="navbar-menu is-active is-shadowless"> 
               <div class="navbar-start">
-                <a href="{{ "/" | relative_url }}" onclick="loadpage(event); return false;" class="navbar-item">
-                  Home
-                </a>
-                <a class="navbar-item">
-                  Contact
-                </a>
+                {% for item in site.data.nav.pages %}
+                  <a 
+                    href="{{ item.url }}"
+                    onclick="loadpage(event); return false;"
+                    class="navbar-item{% if item.slug == page.url %} is-active{% endif %}"
+                    >
+                    {{ item.title }}
+                  </a>
+                {% endfor %}
               </div>
             </div>
           </div>
