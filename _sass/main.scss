@@ -54,9 +54,10 @@ $fullhd-enabled: false;
   font-weight: 700;
 }
 
-.content a {
+.content a, .navbar-menu a.is-active {
   font-weight: 700;
-  border-bottom: 1px solid $blue;
+	border-bottom: 2px solid $blue;
+	color: $blue;
 }
 
 
