@@ -19,17 +19,17 @@ var pjax = new Pjax({
 
 document.addEventListener('pjax:complete', ()=>{
 
-  gsap.to('#pageloader', {duration:0.5, x:"100%", onComplete:()=>{
-    gsap.set('#pageloader', {x:"-100%"});
+  gsap.to('#pageloader', {duration:0.7, x:"100%", ease: "power2.out", onComplete:()=>{
+    gsap.set('#pageloader', {x:"-100%", ease: "power2.out"});
   }});
-  gsap.from('#content',{duration:0.5, x:"-100"});
+  gsap.from('#content',{duration:0.7, x:"-100", ease: "power2.out"});
   
 });
 
 
 function loadpage(e){
-  gsap.to('#content', {duration:1, x:"100"});
-  gsap.to('#pageloader', {duration:0.5, x:"0%", onComplete:()=>{
+  gsap.to('#content', {duration:1, x:"100", ease: "power2.out"});
+  gsap.to('#pageloader', {duration:0.7, x:"0%", ease: "power2.out", onComplete:()=>{
     pjax.loadUrl(e.target.href);
   }});
 }
