@@ -8,6 +8,6 @@ collections:
     folder: '/'
     fields:
       - { label: "Title", name : "title" }
-      - { label: "Layout" , name : "layout"}
+      - { label: "Layout" , name : "layout", widget: "hidden"}
       - { label: "Homepage" , name : "homepage", widget: "boolean"}
       - { label: "Contact", name : "body", widget: 'markdown' }
