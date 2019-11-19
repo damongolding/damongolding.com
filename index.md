@@ -1,6 +1,7 @@
 ---
-layout : home
-homepage : true
+title: Home
+layout: home
+homepage: true
 ---
 A digital designer with a heart that embraces all things
 creative, artistic and innovative, I have 3+ years experience
