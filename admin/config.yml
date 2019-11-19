@@ -3,8 +3,8 @@ backend:
   branch: master
 media_folder: 'assets/uploads'
 collections:
-  - name: 'blog'
-    label: 'Blog'
-    folder: '_posts/'
+  - name: 'pages'
+    label: 'Pages'
+    folder: '/'
     fields:
       - { name: Title }
