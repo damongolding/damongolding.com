@@ -7,4 +7,6 @@ collections:
     label: 'Pages'
     folder: '/'
     fields:
-      - { name: Title }
+      - { label: "Layout" , name : "layout"}
+      - { label: "Homepage" , name : "homepage", widget: "boolean"}
+      - { label: "Contact", name : "body", widget: 'markdown' }
