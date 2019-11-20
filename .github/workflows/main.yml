@@ -3,6 +3,8 @@ on:
  push:
     branches:
     - master
+    branches-ignore:
+     - dev
 
 name: Publish Damongolding.com
 
