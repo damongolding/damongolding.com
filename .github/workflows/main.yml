@@ -4,11 +4,16 @@ on: push
 name: Publish Website Dry Run
 
 jobs:
-  FTP-Deploy-Action:
-    name: FTP-Deploy-Action
+  build:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+    - name: Jekyll build
+      run: jekyll build
+    - name: List files
+      run: ls -al
+    - name: Location
+      run: pwd
     - name: FTP-Deploy-Action
       uses: SamKirkland/FTP-Deploy-Action@2.0.0
       env:
