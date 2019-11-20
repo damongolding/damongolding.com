@@ -24,5 +24,3 @@ jobs:
         FTP_USERNAME: github@damongolding.com
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         LOCAL_DIR: docs
-        REMOTE_DIR: beta
-        ARGS: --delete
