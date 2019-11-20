@@ -15,4 +15,5 @@ jobs:
         FTP_SERVER: ftp.damongolding.com
         FTP_USERNAME: github@damongolding.com
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
+        LOCAL_DIR: docs
         ARGS: --dry-run
