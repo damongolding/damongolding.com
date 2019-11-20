@@ -1,7 +1,7 @@
 
 on: push
 
-name: Publish Website Dry Run
+name: Publish Damongolding.com
 
 jobs:
   build:
@@ -24,4 +24,5 @@ jobs:
         FTP_USERNAME: github@damongolding.com
         FTP_PASSWORD: ${{ secrets.FTP_PASSWORD }}
         LOCAL_DIR: docs
-        ARGS: --dry-run
+        REMOTE_DIR: beta
+        ARGS: --delete --dry-run
