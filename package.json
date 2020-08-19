@@ -1,80 +1,46 @@
 {
-  "_from": "bulma-start",
-  "_id": "bulma-start@0.0.3",
-  "_inBundle": false,
-  "_integrity": "sha512-LJchFdLKUAavS4c8qELN+5FoOicttX8fi1+M2mLZQyf+ru8tcooqQ3j9kdJq1p/FeVyfOLi4vtXP1b3k4tQdtA==",
-  "_location": "/bulma-start",
-  "_phantomChildren": {},
-  "_requested": {
-    "type": "tag",
-    "registry": true,
-    "raw": "bulma-start",
-    "name": "bulma-start",
-    "escapedName": "bulma-start",
-    "rawSpec": "",
-    "saveSpec": null,
-    "fetchSpec": "latest"
-  },
-  "_requiredBy": [
-    "#USER",
-    "/"
-  ],
-  "_resolved": "https://registry.npmjs.org/bulma-start/-/bulma-start-0.0.3.tgz",
-  "_shasum": "cca27a954506fe59df137ea676045173aac54894",
-  "_spec": "bulma-start",
-  "_where": "/Users/jthomas/Desktop",
-  "author": {
-    "name": "Jeremy Thomas",
-    "email": "bbxdesign@gmail.com",
-    "url": "http://jgthms.com"
-  },
-  "bugs": {
-    "url": "https://github.com/jgthms/bulma-start/issues"
-  },
-  "bundleDependencies": false,
-  "deprecated": false,
-  "description": "Start package for Bulma",
-  "devDependencies": {
-    "autoprefixer": "^9.7.6",
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015-ie": "^6.7.0",
-    "braces": ">=2.3.1",
-    "bulma": "^0.7.2",
-    "kind-of": ">=6.0.3",
-    "minimist": ">=0.2.1",
-    "node-sass": "^4.13.1",
-    "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.1"
-  },
-  "homepage": "https://github.com/jgthms/bulma-start#readme",
-  "keywords": [
-    "sass",
-    "bulma",
-    "css",
-    "start"
-  ],
+  "name": "gatsby-starter-hello-world",
+  "private": true,
+  "description": "A simplified bare-bones starter for Gatsby",
+  "version": "0.1.0",
   "license": "MIT",
-  "name": "bulma-start",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  },
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "gatsby": "^2.24.47",
+    "gatsby-image": "^2.4.16",
+    "gatsby-plugin-react-helmet": "^3.3.10",
+    "gatsby-plugin-sass": "^2.3.12",
+    "gatsby-plugin-sharp": "^2.6.27",
+    "gatsby-plugin-transition-link": "^1.20.2",
+    "gatsby-remark-images": "^3.3.25",
+    "gatsby-source-custom-api": "^2.1.4",
+    "gatsby-source-filesystem": "^2.3.24",
+    "gatsby-transformer-json": "^2.4.11",
+    "gatsby-transformer-remark": "^2.8.28",
+    "gatsby-transformer-sharp": "^2.5.13",
+    "gsap": "^3.5.0",
+    "node-sass": "^4.14.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.0.5"
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jgthms/bulma-start.git"
+    "url": "https://github.com/gatsbyjs/gatsby-starter-hello-world"
   },
-  "scripts": {
-    "css-build": "node-sass _sass/main.scss css/main.css",
-    "css-deploy": "npm run css-build && npm run css-postcss",
-    "css-postcss": "postcss --use autoprefixer --output css/main.css css/main.css",
-    "css-watch": "npm run css-build -- --watch",
-    "deploy": "npm run css-deploy && npm run js-build",
-    "js-build": "babel _javascript --out-dir lib",
-    "js-watch": "npm run js-build -- --watch",
-    "start": "npm-run-all --parallel css-watch js-watch"
-  },
-  "version": "0.0.3",
-  "dependencies": {
-    "bulma-pageloader": "^0.3.0",
-    "gsap": "^3.2.6",
-    "jquery": "^3.4.1",
-    "jquery-pjax": "^2.0.1"
+  "bugs": {
+    "url": "https://github.com/gatsbyjs/gatsby/issues"
   }
 }
