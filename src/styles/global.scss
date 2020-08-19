@@ -1,0 +1,152 @@
+@charset "utf-8";
+// If need, change your variables before importing Bulma
+
+$lightGrey: #eeeeee;
+$darkGrey: #141520;
+$blue: #254473;
+$red: #e54b4b;
+
+// secondary colour
+$lightBlue: #edf2f7;
+$pink: #e54b4b;
+$green: #379a4d;
+$darkGreen: #21602f;
+$purple: #6a379a;
+
+$primary-color: $blue;
+
+// Typography
+$body-font-size: 1.125rem;
+$family-sans-serif: "Lato", "Helvetica", "Arial", sans-serif;
+$body-color: #757575;
+
+// 3. Set the derived variables
+// Use the new pink as the primary color
+$primary: $blue;
+
+$widescreen-enabled: true;
+$fullhd-enabled: false;
+
+// footer
+$footer-background-color: $blue;
+$footer-color: true;
+$footer-padding:3rem 1rem;
+
+@import "~bulma/bulma.sass";
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  color: $blue;
+  font-weight: 700;
+}
+
+.content h1{
+  margin-top: 0.5em;
+}
+
+.nolink{
+  font-weight: normal !important;
+  color: inherit !important;
+}
+
+.content a,
+.navbar-menu a.is-active {
+  font-weight: 700;
+  border-bottom: 2px solid $blue;
+  color: $blue;
+}
+
+#introduction-animation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 10000;
+  .title {
+    color: #fff;
+  }
+  #introduction-animation-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $blue;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.page-title {
+  .title {
+    color: $blue;
+    font-weight: 700;
+  }
+  #introduction-highlight {
+    flex-grow: 1;
+    border-left: 12px solid $blue;
+    padding: 0rem 1.5rem;
+  }
+}
+
+.has-divider {
+  &:before {
+    position: absolute;
+    content: "";
+    width: 4rem;
+    height: 0.5rem;
+    background-color: $blue;
+    top: 2rem;
+  }
+}
+
+#skills,
+#values {
+  .skill,
+  .value {
+    margin-bottom: 2rem;
+  }
+}
+
+#pageloader {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  position: fixed;
+  background: #254473;
+  z-index: 999998;
+  transform: translate(-100%, 0);
+}
+
+.field:not(:last-child) {
+  margin-bottom: $size-3;
+}
+
+.projects {
+  background-color: $lightBlue;
+  @media screen and (max-width:768px){
+    margin-top:8rem;
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    background-color: #edf2f7;
+    width: 120vw;
+    height: 12rem;
+    margin-top: -8rem;
+    transform: rotate(-4deg) translate(-11vw, 0);
+  }
+  p{
+    color:#424242;
+  }
+}
+
+
+.gatsby-resp-image-wrapper{
+  margin-left: 0 !important;
+  margin-right:0 !important;
+}
