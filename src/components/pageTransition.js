@@ -12,7 +12,7 @@ const animationOut = (node) => {
   })
 
   gsap.to([`#introduction`, "section:not(.hero)"], {
-    y: -20,
+    y: 20,
     opacity: 0,
     duration: 0.3,
     stagger: 0.1,
@@ -27,7 +27,7 @@ const animationIn = (node) => {
   })
 
   gsap.from([`#introduction`, "section:not(.hero)"], {
-    y: -20,
+    y: 20,
     opacity: 0,
     duration: 0.3,
     stagger: 0.1,
