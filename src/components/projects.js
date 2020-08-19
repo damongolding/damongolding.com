@@ -32,7 +32,7 @@ export default () => {
         <div className="column content is-9-tablet is-9-desktop is-6-widescreen is-offset-1">
           <h2>{title}</h2>
           <TransitionLink
-            to={`/project/${path}`}
+            to={`project/${path}`}
             className="nolink"
             exit={{
               trigger: ({ node }) => animationOut(node),
@@ -47,7 +47,7 @@ export default () => {
           </TransitionLink>
           <br />
           <TransitionLink
-            to={`/project/${path}`}
+            to={`project/${path}`}
             exit={{
               trigger: ({ node }) => animationOut(node),
               length: 0.5,
