@@ -16,11 +16,11 @@ module.exports = {
       },
       {
         name: "About",
-        link: "about",
+        link: "/about",
       },
       {
         name: "Contact",
-        link: "contact",
+        link: "/contact",
       },
     ],
   },
