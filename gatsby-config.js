@@ -74,4 +74,5 @@ module.exports = {
       },
     },
   ],
+  pathPrefix: "/damongolding.com",
 }
