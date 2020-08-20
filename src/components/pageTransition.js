@@ -17,6 +17,11 @@ const animationOut = (node) => {
     duration: 0.3,
     stagger: 0.1,
   })
+
+  gsap.to("footer", {
+    opacity:0,
+    duration:0.3
+  })
 }
 
 const animationIn = (node) => {
@@ -31,6 +36,12 @@ const animationIn = (node) => {
     opacity: 0,
     duration: 0.3,
     stagger: 0.1,
+  })
+
+  gsap.from("footer", {
+    opacity:0,
+    duration:0.3,
+    delay:0.3
   })
 }
 

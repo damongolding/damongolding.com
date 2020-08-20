@@ -27,14 +27,6 @@ const Nav = () => (
               <div className="navbar-menu is-active is-shadowless">
                 <div className="navbar-start">
                   {data.site.siteMetadata.menuLinks.map((link) => (
-                    // <Link
-                    //   key={link.name}
-                    //   className="navbar-item"
-                    //   activeClassName="is-active"
-                    //   to={link.link}
-                    // >
-                    //   {link.name}
-                    // </Link>
                     <TransitionLink
                       key={link.name}
                       className="navbar-item"
