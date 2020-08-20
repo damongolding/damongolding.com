@@ -7,7 +7,6 @@ export default ({ props, children }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
-        host
         siteMetadata {
           title
           keywords
