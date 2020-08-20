@@ -7,6 +7,7 @@ export default ({ props, children }) => {
   const data = useStaticQuery(graphql`
     query {
       site {
+        pathPrefix
         siteMetadata {
           title
           keywords
@@ -52,33 +53,33 @@ export default ({ props, children }) => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href="/apple-touch-icon.png"
+          href={`${data.pathPrefix? data.pathPrefix : ""}/apple-touch-icon.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href="/favicon-16x16.png"
+          href={`${data.pathPrefix? data.pathPrefix : ""}/favicon-16x16.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href="/favicon-32x32.png"
+          href={`${data.pathPrefix? data.pathPrefix : ""}/favicon-32x32.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href="/android-chrome-192x192.png"
+          href={`${data.pathPrefix? data.pathPrefix : ""}/android-chrome-192x192.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="512x512"
-          href="/android-chrome-512x512.png"
+          href={`${data.pathPrefix? data.pathPrefix : ""}/android-chrome-512x512.png`}
         />
-        <link rel="manifest" href="/site.webmanifest.json" />
+        <link rel="manifest" href={`${data.pathPrefix? data.pathPrefix : ""}/site.webmanifest.json`} />
         <link rel="canonical" href={location.href} />
         <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
