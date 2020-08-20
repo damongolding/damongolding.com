@@ -1,15 +1,15 @@
 import React from "react"
-import { Helmet } from "react-helmet"
 
 import Container from "../components/container"
 import Nav from "../components/nav"
 
-export default data => {
+export default (data) => {
+
   const { title, liveLink, html } = data.pageContext
 
   return (
-    <Container>
-      <Helmet title={`${title}`} />
+    <Container props={data}>
+      
       <section className="hero page-title">
         <div className="hero-head">
           <Nav />

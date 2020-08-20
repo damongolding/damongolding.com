@@ -1,5 +1,5 @@
 import React from "react"
-import { StaticQuery, graphql, Link } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 import TransitionLink from "gatsby-plugin-transition-link"
 import { animationIn, animationOut } from "./pageTransition"
 
@@ -9,7 +9,6 @@ const Nav = () => (
       query SiteQuery {
         site {
           siteMetadata {
-            title
             menuLinks {
               name
               link

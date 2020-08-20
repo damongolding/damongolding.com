@@ -1,11 +1,9 @@
 import React, { useState } from "react"
-import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
 
 import Container from "../components/container"
 import Nav from "../components/nav"
 
-export default ({ data }) => {
+export default (props, { data }) => {
 
 
 	const [values, setValues] = useState({name: '', email: "", message:"", sending: false});
@@ -24,11 +22,7 @@ export default ({ data }) => {
 	}
 
   return (
-    <Container>
-      <Helmet>
-        <title>{data.site.siteMetadata.title}</title>
-      </Helmet>
-
+    <Container props={props}>
       <section className="hero page-title">
         <div className="hero-head">
           <Nav />
@@ -123,13 +117,3 @@ export default ({ data }) => {
     </Container>
   )
 }
-
-export const query = graphql`
-  query catImage {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

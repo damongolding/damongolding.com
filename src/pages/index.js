@@ -1,19 +1,13 @@
 import React from "react"
-import { Helmet } from "react-helmet"
-import { graphql } from "gatsby"
 
 import Container from "../components/container"
 import Nav from "../components/nav"
 import Projects from "../components/projects"
 
-export default ({ data }) => {
+export default ( props ,{ data }) => {
 
   return (
-    <Container>
-      <Helmet>
-        <title>{data.site.siteMetadata.title}</title>
-      </Helmet>
-
+    <Container props={props}>
       <section className="hero is-large page-title">
         <div className="hero-head">
           <Nav />
@@ -47,13 +41,3 @@ export default ({ data }) => {
     </Container>
   )
 }
-
-export const query = graphql`
-  query {
-    site {
-      siteMetadata {
-        title
-      }
-    }
-  }
-`

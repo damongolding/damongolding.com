@@ -9,6 +9,8 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Damon Golding's website`,
+    description : `Things`,
+    keywords:`design, designer, damon, golding`,
     menuLinks: [
       {
         name: "Home",
