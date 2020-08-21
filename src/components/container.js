@@ -53,36 +53,36 @@ export default ({ props, children }) => {
         <link
           rel="apple-touch-icon"
           sizes="180x180"
-          href={`${data.site.pathPrefix? data.site.pathPrefix : ""}/apple-touch-icon.png`}
+          href={`/apple-touch-icon.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="16x16"
-          href={`${data.site.pathPrefix? data.site.pathPrefix : ""}/favicon-16x16.png`}
+          href={`/favicon-16x16.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="32x32"
-          href={`${data.site.pathPrefix? data.site.pathPrefix : ""}/favicon-32x32.png`}
+          href={`/favicon-32x32.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="192x192"
-          href={`${data.site.pathPrefix? data.site.pathPrefix : ""}/android-chrome-192x192.png`}
+          href={`/android-chrome-192x192.png`}
         />
         <link
           rel="icon"
           type="image/png"
           sizes="512x512"
-          href={`${data.site.pathPrefix? data.site.pathPrefix : ""}/android-chrome-512x512.png`}
+          href={`/android-chrome-512x512.png`}
         />
-        <link rel="manifest" href={`${data.site.pathPrefix? data.site.pathPrefix : ""}/site.webmanifest.json`} />
+        <link rel="manifest" href={`/site.webmanifest.json`} />
         <link rel="canonical" href={location.href} />
         <meta name="msapplication-TileColor" content="#254473" />
-        <meta name="msapplication-TileImage" content={`${data.site.pathPrefix? data.site.pathPrefix : ""}/ms-icon-144x144.png`} />
+        <meta name="msapplication-TileImage" content={`/ms-icon-144x144.png`} />
         <meta name="theme-color" content="#ffffff" />
         <meta name="description" content={data.site.siteMetadata.description} />
         <meta name="keywords" content={data.site.siteMetadata.keywords} />

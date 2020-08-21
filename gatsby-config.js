@@ -5,7 +5,7 @@
  */
 
 module.exports = {
-  pathPrefix: `/damongolding.com`,
+  pathPrefix: ``,
   /* Your site config here */
   siteMetadata: {
     title: `Damon Golding's website`,
